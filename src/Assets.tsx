@@ -2,7 +2,7 @@ import AssetCard from "./AssetCard";
 import "./Assets.css";
 import { useQuery, gql } from "@apollo/client";
 
-const ASSETS_DATA = gql`
+export const GET_ASSETS_DATA = gql`
   query MyQuery {
     asalist {
       results {
@@ -16,7 +16,7 @@ const ASSETS_DATA = gql`
 `;
 
 const Assets = () => {
-  const { data, loading, error } = useQuery(ASSETS_DATA);
+  const { data, loading, error } = useQuery(GET_ASSETS_DATA);
 
   if (loading) {
     return (
