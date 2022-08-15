@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { MockedProvider } from "@apollo/client/testing";
-import Assets, { GET_ASSETS_DATA } from "./Assets";
+import Assets, { GET_ASSETS_DATA } from "../components/Assets";
 
 // const mocks: any = [];
 

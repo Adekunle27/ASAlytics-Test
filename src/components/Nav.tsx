@@ -1,5 +1,5 @@
-import header_logo from "./images/header-logo.png";
-import "./Nav.css";
+import header_logo from "../images/header-logo.png";
+import "../styles/Nav.css";
 
 const Nav = () => {
   return (

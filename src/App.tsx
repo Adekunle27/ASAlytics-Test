@@ -1,7 +1,7 @@
 import "./App.css";
-import Nav from "./Nav";
-import Header from "./Header";
-import Assets from "./Assets";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Assets from "./components/Assets";
 
 function App() {
   return (

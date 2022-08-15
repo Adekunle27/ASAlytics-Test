@@ -1,5 +1,5 @@
 import AssetCard from "./AssetCard";
-import "./Assets.css";
+import "../styles/Assets.css";
 import { useQuery, gql } from "@apollo/client";
 
 export const GET_ASSETS_DATA = gql`

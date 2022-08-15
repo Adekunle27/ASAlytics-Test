@@ -1,6 +1,6 @@
 import React from "react";
-import Algorand from "./images/bitcoinIc1.png";
-import "./AssetCard.css";
+import Algorand from "../images/bitcoinIc1.png";
+import "../styles/AssetCard.css";
 
 interface AssetProps {
   asset: any;
