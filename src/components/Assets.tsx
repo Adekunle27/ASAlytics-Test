@@ -5,7 +5,7 @@ import { useQuery, gql } from "@apollo/client";
 export const GET_ASSETS_DATA = gql`
   query MyQuery {
     asalist {
-      results {
+      result {
         assetId
         available
         logo
@@ -17,6 +17,7 @@ export const GET_ASSETS_DATA = gql`
 
 const Assets = () => {
   const { data, loading, error } = useQuery(GET_ASSETS_DATA);
+  console.log(data);
 
   if (loading) {
     return (
@@ -33,7 +34,7 @@ const Assets = () => {
 
   return (
     <section className="container assets__container">
-      {data.asalist.results.map((asset: any) => (
+      {data.asalist.result.map((asset: any) => (
         <AssetCard key={asset.assetId} asset={asset} />
       ))}
     </section>
